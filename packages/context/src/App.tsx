@@ -6,7 +6,7 @@ export interface IUserContext {
   setUser?: React.Dispatch<React.SetStateAction<IUserInfo>>;
 }
 
-export interface IUserInfo {
+interface IUserInfo {
   name?: string;
   age?: number;
   major?: string;
