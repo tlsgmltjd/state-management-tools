@@ -2,11 +2,15 @@ import React, { useContext, useState } from "react";
 import { IUserContext, userInfoContext } from "../App";
 
 export default function ButtonBox() {
-  const { setUser }: IUserContext = useContext(userInfoContext);
+  const { user, setUser }: IUserContext = useContext(userInfoContext);
   const [major, setMajor] = useState("front-end");
 
-  const onClick = () => {
+  const onMotifyMajor = () => {
     if (setUser) setUser((preUser) => ({ ...preUser, major: major }));
+  };
+
+  const onAddAge = () => {
+    if (setUser) setUser((preUser) => ({ ...preUser, age: user?.age! + 1 }));
   };
 
   const onInput = (e: React.FormEvent<HTMLSelectElement>) => {
@@ -21,7 +25,8 @@ export default function ButtonBox() {
         <option value="back-end">back-end</option>
         <option value="design">design</option>
       </select>
-      <button onClick={onClick}>motify name</button>
+      <button onClick={onMotifyMajor}>motify major</button>
+      <button onClick={onAddAge}>add age</button>
     </div>
   );
 }
