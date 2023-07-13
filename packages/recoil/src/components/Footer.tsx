@@ -1,0 +1,10 @@
+import ControlBox from "./ControlBox";
+
+export default function Footer() {
+  return (
+    <div>
+      <h2>Footer</h2>
+      <ControlBox />
+    </div>
+  );
+}
