@@ -8,15 +8,15 @@ export default function App() {
   );
 }
 
-// atom
+// atom ✅
 // texListState []
 // categoryState
 // textListSelector
 
-// - Components
+// - Components ✅
 // -- header : textList select
 
-// -- Main
+// -- Main ✅
 // --- ListBox : textList renderings
 
 // -- Footer

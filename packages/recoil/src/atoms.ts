@@ -8,13 +8,7 @@ export interface ITextItem {
 
 export const textListState = atom<ITextItem[]>({
   key: "numberListState",
-  default: [
-    { id: 13, text: "Asd", category: "ONE" },
-    { id: 323, text: "Asd", category: "ONE" },
-    { id: 423, text: "Asd", category: "ONE" },
-    { id: 623, text: "Asd", category: "THREE" },
-    { id: 723, text: "Asd", category: "THREE" },
-  ],
+  default: [],
 });
 
 export const categoryState = atom<"ONE" | "TWO" | "THREE">({
