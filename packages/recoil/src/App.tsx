@@ -19,5 +19,5 @@ export default function App() {
 // -- Main ✅
 // --- ListBox : textList renderings
 
-// -- Footer
+// -- Footer ✅
 // --- ControlBox : numberList text input

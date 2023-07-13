@@ -1,8 +1,10 @@
 import { atom, selector } from "recoil";
 
+type categoryType = "ONE" | "TWO" | "THREE";
+
 export interface ITextItem {
   text: string;
-  category: "ONE" | "TWO" | "THREE";
+  category: categoryType;
   id: number;
 }
 
@@ -11,7 +13,7 @@ export const textListState = atom<ITextItem[]>({
   default: [],
 });
 
-export const categoryState = atom<"ONE" | "TWO" | "THREE">({
+export const categoryState = atom<categoryType>({
   key: "categoryState",
   default: "ONE",
 });

@@ -1,5 +1,5 @@
 import { useRecoilState } from "recoil";
-import { categoryState } from "../atoms";
+import { ITextItem, categoryState } from "../atoms";
 import React from "react";
 
 export default function Header() {
@@ -11,7 +11,7 @@ export default function Header() {
       <select
         value={category}
         onChange={(e: React.FormEvent<HTMLSelectElement>) => {
-          return setCategory(e.currentTarget.value as any);
+          return setCategory(e.currentTarget.value as ITextItem["category"]);
         }}
       >
         <option value="ONE">ONE</option>

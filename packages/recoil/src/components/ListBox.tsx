@@ -4,8 +4,6 @@ import { useRecoilValue } from "recoil";
 export default function ListBox() {
   const textList = useRecoilValue(textListSelector);
 
-  console.log(textList);
-
   return (
     <div>
       <h3>ListBox</h3>
